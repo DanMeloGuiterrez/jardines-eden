@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+}
+
+/* Mini Menu*/
+
+.nav {
+    background-color: rgb(103, 235, 51);
+    border-style: solid;
+    border-color:black;
+    border-radius: 5px;
+    border-width: 1pt;
+
+    display: flex; /* Para que una imagen quede a lado de otra*/
+    align-items: center; 
+    justify-content: center; /* Centra todos los elementos en la barra */
+    padding: 10px; 
+}
+
+.nav__title {
+    margin: 0;
+    font-size: 40px;
+    
+}
+
+.nav__logo {
+    height: 40px; 
+    width: auto; /* Mantiene la proporción */
+    margin-right: 10px;
+}
+
+.nav__telefono {
+    height: 40px; 
+    width: auto; 
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.nav__list {
+    margin: 0;
+}
+
+.nav__item {
+    display: inline-block; /* Nos permite alinear en una fila */
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 19px;
+    transition: background-color 0.3s; /* Efecto */
+}
+
+.nav__link:hover { /* Diseño cuando paso el cursor */
+    background-color: rgb(30, 237, 137);
+    border-style: solid;
+    border-color:black;
+    border-radius: 5px;
+    border-width: 1pt;
+}
+
+/* Transicion de imagenes */
+
+
+.imagenes_transision {
+    width: auto; 
+    height: auto; 
+    overflow: hidden;
+}
+
+
+.imagenes_transision ul {
+    
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: slide 36s infinite alternate ease-in-out;
+}
+.imagenes_transision li {
+    
+	width: 100%;
+	list-style: none;
+}
+
+.imagenes_transision img {
+	width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    16% { margin-left: 0; }
+
+    20% { margin-left: -100%; }
+    36% { margin-left: -100%; }
+
+    40% { margin-left: -200%; }
+    56% { margin-left: -200%; }
+
+    60% { margin-left: -300%; }
+    76% { margin-left: -300%; }
+
+    80% { margin-left: -400%; }
+    100% { margin-left: -400%; }
+}
+
+.slide {
+    position: relative;
+}
+
+.texto_imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px 20px;
+    font-size: 50px; /* Tamaño */
+    font-weight: bold; /* Negrita */
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Nuestros Productos */
+
+.nav1 {
+
+    display: flex; /* Para que una imagen quede a lado de otra*/
+    align-items: center; 
+    justify-content: center; /* Centra todos los elementos en la barra */
+    padding: 10px; 
+    
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que se acomoden correctamente si no caben en una fila */
+    justify-content: center;
+    gap: 15px; /* Espaciado entre productos */
+}
+
+.nav__item1 {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px;
+
+    flex-direction: column; /* Para alinear imagen y texto */
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Ajusta el ancho */
+    height: auto; /* Ajusta la altura */
+
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* Agrega animación */
+}
+
+.nav__item1:hover {
+    background-color: rgb(85, 247, 44); /* Cambia este color al que prefieras */
+    transform: scale(1.05); /* Efecto */
+}
+
+.nav__item1 .imagen {
+    width: 120px; /* Ancho fijo */
+    height: 120px; /* Altura fija */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Espaciado entre la imagen y el título */
+}
+
+/* Nuestros servicios y ventas adicionales */
+
+.nav__link1 {
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.nav__comment {
+    font-size: 14px; /* tamaño de la letra*/
+    display: block;
+    margin-top: 5px;
+    color: rgb(56, 37, 37);
+}
+
+/* Muestra de plantas y precios */
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex-item {
+    width: 200px;
+    border: 1pt solid black;
+    border-radius: 10px;
+    background-color: rgb(85, 247, 44);
+    color: #3d0606;
+    font-size: 18px;
+    text-align: center;
+    flex: 1 1 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos para la imagen con tamaño fijo */
+.imagen {
+    width: 150px;  /* Ajusta el ancho de la imagen */
+    height: 150px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 5px;
+}
+
+/* Estilos para el nombre */
+.nombre {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos para el precio */
+.precio {
+    font-size: 14px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Formulario para comprar. */
+
+
+
+/* Pie de página */
+footer {
+    background-color: black;
+    padding: 2rem;
+    color: aliceblue;
+}
+
+/* Contenedor del pie de página */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sección izquierda */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sección centro */
+.footer-center {
+    text-align:start;
+}
+
+/* Sección derecha */
+.footer-right {
+    text-align: start;
+}
+
+/* Enlaces */
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer a:hover {
+    color: #ff0000;
+}
+
+.imagen_1 {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
