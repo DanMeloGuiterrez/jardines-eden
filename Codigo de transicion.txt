@@ -1,0 +1,102 @@
+<!-- Transision de imagenes-->
+
+<div class="imagenes_transision">
+    <ul>
+        <li>
+            <div class="slide">
+                <img src="Imagenes/imagen1.png" alt="">
+                <span class="texto_imagen">Puede encontrar un monton de variedades de plantas</span>
+            </div>
+        </li>
+        <li>
+            <div class="slide">
+                <img src="Imagenes/imagen2.png" alt="">
+                <span class="texto_imagen">Distribuimos a diferentes partes del pais </span>
+            </div>
+        </li>
+        <li>
+            <div class="slide">
+                <img src="Imagenes/imagen3.png" alt="">
+                <span class="texto_imagen">Al mejor precio S/. </span>
+            </div>
+        </li>
+        <li>
+            <div class="slide">
+                <img src="Imagenes/imagen4.png" alt="">
+                <span class="texto_imagen">Y al menor tiempo posible</span>
+            </div>
+        </li>
+        <li>
+            <div class="slide">
+                <img src="Imagenes/imagen5.png" alt="">
+                <span class="texto_imagen">Elije Jardines Eden para tus decoraciones</span>
+            </div>
+        </li>
+    </ul>
+</div>
+    
+
+
+/* Transicion de imagenes */
+
+
+    .imagenes_transision {
+        width: auto; 
+        height: auto; 
+        overflow: hidden;
+    }
+    
+    
+    .imagenes_transision ul {
+        
+        display: flex;
+        padding: 0;
+        width: 500%;
+    
+        animation: slide 36s infinite alternate ease-in-out;
+    }
+    .imagenes_transision li {
+        
+        width: 100%;
+        list-style: none;
+    }
+    
+    .imagenes_transision img {
+        width: 100%;
+    }
+    
+    @keyframes slide {
+        0% { margin-left: 0; }
+        16% { margin-left: 0; }
+    
+        20% { margin-left: -100%; }
+        36% { margin-left: -100%; }
+    
+        40% { margin-left: -200%; }
+        56% { margin-left: -200%; }
+    
+        60% { margin-left: -300%; }
+        76% { margin-left: -300%; }
+    
+        80% { margin-left: -400%; }
+        100% { margin-left: -400%; }
+    }
+    
+    .slide {
+        position: relative;
+    }
+    
+    .texto_imagen {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        padding: 10px 20px;
+        font-size: 50px; /* Tamaño */
+        font-weight: bold; /* Negrita */
+        border-radius: 5px;
+        text-align: center;
+    }
+    

@@ -14,20 +14,20 @@
             Jardines Edén
         </h1>
         
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="" class="nav__link" >Inicio</a>
+        <ul class="nav__list_del_menu">
+            <li class="nav__item_del_menu">
+                <a href="" class="nav__link_menu" >Inicio</a>
             </li>
 
-            <li class="nav__item">
-                <a href="" class="nav__link" >Nosotros</a>
+            <li class="nav__item_del_menu">
+                <a href="" class="nav__link_menu" >Nosotros</a>
             </li>
-            <li class="nav__item">
-                <a href="" class="nav__link" >Tienda</a>
+            <li class="nav__item_del_menu">
+                <a href="" class="nav__link_menu" >Tienda</a>
             </li>
 
-            <li class="nav__item">
-                <a href="" class="nav__link" >Contactanos</a>
+            <li class="nav__item_del_menu">
+                <a href="" class="nav__link_menu" >Contactanos</a>
             </li>
         </ul>
         
@@ -41,43 +41,32 @@
     <!-- Transision de imagenes-->
 
     <div class="imagenes_transision">
-        <ul>
-            <li>
-                <div class="slide">
-                    <img src="Imagenes/imagen1.png" alt="">
-                    <span class="texto_imagen">Puede encontrar un monton de variedades de plantas</span>
+        <div class="atras_carrucel">
+            <img id="atras" src="Imagenes/atras.svg"  loading="lazy">
+        </div>
+
+        <div class="imagenes_carrucel">
+            <div id="img" class="contenedor_imagen">
+                <img class="img" src="Imagenes/imagen1.png" loading="lazy">
+                
+                <div class="texto_imagen">
+                    <p>Puede encontrar un montón de variedades de plantas</p>
                 </div>
-            </li>
-            <li>
-                <div class="slide">
-                    <img src="Imagenes/imagen2.png" alt="">
-                    <span class="texto_imagen">Distribuimos a diferentes partes del pais </span>
-                </div>
-            </li>
-            <li>
-                <div class="slide">
-                    <img src="Imagenes/imagen3.png" alt="">
-                    <span class="texto_imagen">Al mejor precio S/. </span>
-                </div>
-            </li>
-            <li>
-                <div class="slide">
-                    <img src="Imagenes/imagen4.png" alt="">
-                    <span class="texto_imagen">Y al menor tiempo posible</span>
-                </div>
-            </li>
-            <li>
-                <div class="slide">
-                    <img src="Imagenes/imagen5.png" alt="">
-                    <span class="texto_imagen">Elije Jardines Eden para tus decoraciones</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
     
+        <div class="adelante_carrucel" id="adelante">
+            <img src="Imagenes/adelante.svg" loading="lazy">
+        </div>
+    </div>
+
+    <div class="puntos" id="puntos"></div>
+
+    
+        
     <!-- Nuestros Productos-->
 
-    <nav class="nav1" id="nuestros_productos">
+    <nav class="nav_categoria" id="nuestros_productos">
         <img src="Imagenes/mini_imagen1.png" class="nav__logo" >
 
         <h1 class="nav__title">
@@ -85,77 +74,81 @@
         </h1>
     </nav>
 
-    <nav class="nav1">        
-        <ul class="nav__list">
-            <li class="nav__item1">
+    <nav class="nav_categoria">     
+
+        <ul class="nav__list_categoria">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_1.jpeg" class="imagen">
-                <a href="" class="nav__link" >Plantas Ornamentales</a>
+                <a href="" class="nav__link_menu" >Plantas Ornamentales</a>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_3.jpeg" class="imagen">
-                <a href="" class="nav__link" >Frutales</a>
+                <a href="" class="nav__link_menu" >Frutales</a>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_4.png" class="imagen">
-                <a href="" class="nav__link" >Arboles</a>
+                <a href="" class="nav__link_menu" >Arboles</a>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_5.jpeg" class="imagen">
-                <a href="" class="nav__link" >Suculentas</a>
+                <a href="" class="nav__link_menu" >Suculentas</a>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_6.jpeg" class="imagen">
-                <a href="" class="nav__link" >Enredaderas, plantas trepadoras y colgantes.</a>
+                <a href="" class="nav__link_menu" >Enredaderas, plantas trepadoras y colgantes.</a>
             </li>
         </ul>
+
     </nav>
 
     <!-- Nuestros servicios y ventas adicionales -->
 
-    <nav class="nav1" id="servicios">
+    <nav class="nav_categoria" id="servicios">
         <img src="Imagenes/mini_imagen2.png" class="nav__logo" >
 
         <h1 class="nav__title">
             Nuestros servicios y ventas adicionales
         </h1>
-        
     </nav>
 
-    <nav class="nav1">        
-        <ul class="nav__list">
-            <li class="nav__item1">
+    <nav class="nav_categoria">        
+        <ul class="nav__list_categoria">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_11.jpeg" class="imagen">
-                <span class="nav__link1">Asesoramiento de Jardinería</span>
+                <span class="nav__link_descripcion">Asesoramiento de Jardinería</span>
                 <span class="nav__comment">Te guiamos y enseñamos a cómo cuidar tu jardín para que sea duradero</span>
             </li>   
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_12.jpeg" class="imagen">
-                <span class="nav__link1">Mantenimiento</span>
+                <span class="nav__link_descripcion">Mantenimiento</span>
                 <span class="nav__comment">Mantenimiento experto para un jardín siempre radiante</span>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_13.png" class="imagen">
-                <a href="" class="nav__link" >Ventas de Herramientas y Macetas</a>
+                <a href="" class="nav__link_menu" >Ventas de Herramientas y Macetas</a>
             </li>
 
-            <li class="nav__item1">
+            <li class="nav__item_categoria">
                 <img src="Img_plantas/img_14.png" class="imagen">
-                <a href="" class="nav__link" >Venta de Abono y Sustratos</a>
+                <a href="" class="nav__link_menu" >Venta de Abono y Sustratos</a>
             </li>
 
         </ul>
     </nav>
+
     <br>
     <br>
+
+
     <!-- Muestra de plantas y precios -->
     <!-- Plantas Ornamentales -->
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Plantas Ornamentales
         </h1>
@@ -244,7 +237,7 @@
 
     <!-- Frutales -->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Frutales
         </h1>
@@ -296,7 +289,7 @@
     </div>
     <!-- Arboles -->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Arboles
         </h1>
@@ -349,7 +342,7 @@
 
     <!-- Suculentas y Cactus -->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Suculentas y Cactus
         </h1>
@@ -376,8 +369,8 @@
 
         <div class="flex-item">
             <img src="Suculentas/img_4.jpeg" class="imagen">
-            <span class="nombre"> Peyote  </span>
-            <span class="precio">S/. 120</span>
+            <span class="nombre"> Peyote </span>
+            <span class="precio">S/. 100</span>
         </div>
 
         <div class="flex-item">
@@ -419,7 +412,7 @@
 
     <!-- Enredaderas, plantas trepadoras y colgantes.-->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Enredaderas, plantas trepadoras y colgantes.
         </h1>
@@ -483,7 +476,7 @@
 
     <!-- Ventas de Herramientas y Macetas.-->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Ventas de Herramientas y Macetas.
         </h1>
@@ -570,7 +563,7 @@
     </div>
     <!-- Venta de abono y Sustratos.-->
 
-    <nav class="nav1">
+    <nav class="nav_categoria">
         <h1 class="nav__title">
             Venta de abono y Sustratos.
         </h1>
@@ -621,21 +614,6 @@
         
     </div>
 
-    <!-- Formulario para comprar. -->
-
-    <form action="/formulario" method="GET">
-        <label for="nombre"> Nombre </label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
-        <br>
-        <label for="apellido"> Apellido </label>
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
-        <br>
-        <label for="comentario"> Comentario </label>
-        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese comentario"></textarea>
-        <br>
-        <input type="submit"/>
-    </form>
-
     <footer>
         <div class="footer-container">
             <!-- Parte Izquierda -->
@@ -664,6 +642,6 @@
         </div>
     </footer>
     
-    
+    <script src="app.js"></script>
 </body>
 </html>

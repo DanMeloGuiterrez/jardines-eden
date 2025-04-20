@@ -1,15 +1,12 @@
 body {
     margin: 0;
+    background-color: rgb(230, 245, 216);
 }
 
 /* Mini Menu*/
 
-.nav {
-    background-color: rgb(103, 235, 51);
-    border-style: solid;
-    border-color:black;
-    border-radius: 5px;
-    border-width: 1pt;
+.nav { /* Fondo del Menu */
+    background-color: rgb(0, 244, 49);
 
     display: flex; /* Para que una imagen quede a lado de otra*/
     align-items: center; 
@@ -19,32 +16,34 @@ body {
 
 .nav__title {
     margin: 0;
-    font-size: 40px;
+    font-size: 40px; /* Aumentar el tamaño */
     
 }
 
 .nav__logo {
-    height: 40px; 
+    
+    height: 40px; /* Configura la altura */
     width: auto; /* Mantiene la proporción */
-    margin-right: 10px;
+    margin-right: 10px; /* margen de separacion por derecha */
 }
 
 .nav__telefono {
     height: 40px; 
     width: auto; 
     margin-right: 10px;
-    margin-left: 20px;
-}
+    
+    margin-left: 20px; /* margen de separacion por izquierda */
+} 
 
-.nav__list {
+.nav__list_del_menu {
     margin: 0;
 }
 
-.nav__item {
+.nav__item_del_menu {
     display: inline-block; /* Nos permite alinear en una fila */
 }
 
-.nav__link {
+.nav__link_menu {
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -54,7 +53,7 @@ body {
     transition: background-color 0.3s; /* Efecto */
 }
 
-.nav__link:hover { /* Diseño cuando paso el cursor */
+.nav__link_menu:hover { /* Diseño cuando paso el cursor */
     background-color: rgb(30, 237, 137);
     border-style: solid;
     border-color:black;
@@ -64,51 +63,45 @@ body {
 
 /* Transicion de imagenes */
 
-
-.imagenes_transision {
-    width: auto; 
-    height: auto; 
+.imagenes_transision{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
+.img{
 
-.imagenes_transision ul {
-    
+    height: 800px;
+    width: 1600px;
+    border-radius: 15px;
+    margin: 5px;
+    filter: saturate(175%);  /* Más calidad */
+}
+
+
+.puntos{
     display: flex;
-    padding: 0;
-    width: 500%;
-
-    animation: slide 36s infinite alternate ease-in-out;
+    justify-content: center;
 }
-.imagenes_transision li {
+
+.puntos p {
+    font-size: 40px; /* Más pequeño */
+    margin: 0 5px;   /* Menos separacion */
+}
+
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #3803a2 ;
+}
+   
+.contenedor_imagen {
+    position: relative; /* Necesario para posicionar el texto encima */
     
-	width: 100%;
-	list-style: none;
-}
-
-.imagenes_transision img {
-	width: 100%;
-}
-
-@keyframes slide {
-    0% { margin-left: 0; }
-    16% { margin-left: 0; }
-
-    20% { margin-left: -100%; }
-    36% { margin-left: -100%; }
-
-    40% { margin-left: -200%; }
-    56% { margin-left: -200%; }
-
-    60% { margin-left: -300%; }
-    76% { margin-left: -300%; }
-
-    80% { margin-left: -400%; }
-    100% { margin-left: -400%; }
-}
-
-.slide {
-    position: relative;
 }
 
 .texto_imagen {
@@ -116,42 +109,46 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px 20px;
-    font-size: 50px; /* Tamaño */
-    font-weight: bold; /* Negrita */
-    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
     text-align: center;
+    max-width: 80%;
 }
+
+.texto_imagen p {
+    margin: 10px 0 0 0;
+}
+
 
 /* Nuestros Productos */
 
-.nav1 {
+.nav_categoria {
 
     display: flex; /* Para que una imagen quede a lado de otra*/
     align-items: center; 
     justify-content: center; /* Centra todos los elementos en la barra */
-    padding: 10px; 
+    padding: 10px; /* paddding o separacion entre filas*/
     
 }
 
-.nav__list {
+.nav__list_categoria {
     display: flex;
     flex-wrap: wrap; /* Permite que se acomoden correctamente si no caben en una fila */
     justify-content: center;
     gap: 15px; /* Espaciado entre productos */
 }
 
-.nav__item1 {
+.nav__item_categoria {
     border: 2px solid black;
     border-radius: 5px;
     display: inline-block;
     padding: 15px;
 
     flex-direction: column; /* Para alinear imagen y texto */
-    align-items: center;
-    justify-content: center;
     width: 150px; /* Ajusta el ancho */
     height: auto; /* Ajusta la altura */
 
@@ -159,12 +156,12 @@ body {
     transition: background-color 0.3s, transform 0.2s; /* Agrega animación */
 }
 
-.nav__item1:hover {
+.nav__item_categoria:hover {
     background-color: rgb(85, 247, 44); /* Cambia este color al que prefieras */
     transform: scale(1.05); /* Efecto */
 }
 
-.nav__item1 .imagen {
+.nav__item_categoria .imagen {
     width: 120px; /* Ancho fijo */
     height: 120px; /* Altura fija */
     object-fit: cover;
@@ -172,20 +169,22 @@ body {
     margin-bottom: 10px; /* Espaciado entre la imagen y el título */
 }
 
+
+
+
 /* Nuestros servicios y ventas adicionales */
 
-.nav__link1 {
+.nav__link_descripcion {
     color: black;
     display: inline-block;
     padding: 10px;
-    margin-left: 5px;
 }
 
 .nav__comment {
-    font-size: 14px; /* tamaño de la letra*/
-    display: block;
-    margin-top: 5px;
     color: rgb(56, 37, 37);
+    display: block;
+
+    font-size: 14px; /* tamaño de la letra*/
 }
 
 /* Muestra de plantas y precios */
